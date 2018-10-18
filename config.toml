@@ -1,0 +1,53 @@
+title                      = "SHITY Hiking and Outdoor"
+baseURL                    = "http://shityhiking.github.io"
+tags                       = ["outdoor", "meetup", "hiking", "korea", "mountain"]
+languageCode               = "zn-Hans"
+
+theme                      = "AllinOne"
+
+summaryLength              = 200
+layoutdir                  = "layouts"
+publishdir                 = "public"
+contentdir                 = "content"
+canonifyurls               = true
+Paginate                   = 3
+enableEmoji                = true
+
+
+
+[taxonomies]
+  tag                      = "tags"
+  series                   = "series"
+  category                 = "categories"
+
+#[menu]
+#  [[menu.main]]
+#    name                   = "Upcoming"
+#    weight                 = -120
+#    identifier             = "upcoming"
+#    url                    = "upcoming/"
+#
+#  [[menu.main]]
+#    name                   = "Moment"
+#    weight                 = -110
+#    identifier             = "moment"
+#    url                    = "moment/"
+#
+#  [[menu.main]]
+#    name                   = "Gallery"
+#    weight                 = -100
+#    identifier             = "gallery"
+#    url                    = "gallery/"
+
+[Params]
+	slidesDirPath    = "static/img/header-slides"  
+	slidesDirPathURL = "img/header-slides"
+        faviconfile      = "img/colormountain.png"
+        avatar           = "img/shitylogomountain.png"
+        author           = "SHITY"
+        description      = ["Hike the Mountains", "Enjoy the outdoor", "Meet Wonderful People & Love the Wonderful World"]
+        welcome_head     = "Its a beautiful World!"
+        welcome_word     = "~ No Day But Sunday ~"
+
+        facebook         = "https://www.facebook.com/groups/shity/"
+        meetup           = ""
