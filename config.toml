@@ -1,5 +1,5 @@
 title                      = "SHITY Hiking and Outdoor"
-baseURL                    = "http://shityhiking.github.io"
+baseURL                    = "https://shityhiking.github.io"
 tags                       = ["outdoor", "meetup", "hiking", "korea", "mountain"]
 languageCode               = "zn-Hans"
 
@@ -45,7 +45,7 @@ enableEmoji                = true
         faviconfile      = "img/colormountain.png"
         avatar           = "img/shitylogomountain.png"
         author           = "SHITY"
-        description      = ["Hike the Mountains", "Enjoy the outdoor", "Meet Wonderful People & Love the Wonderful World"]
+        description      = ["Hike Mountains", "Enjoy the Outdoors", "Meet Wonderful People & Love Our Wonderful World"]
         welcome_head     = "Its a beautiful World!"
         welcome_word     = "~ No Day But Sunday ~"
 
