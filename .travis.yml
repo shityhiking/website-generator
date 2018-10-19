@@ -1,13 +1,13 @@
 language: python
 
 install:
-    - wget https://github.com/gohugoio/hugo/releases/download/v0.46/hugo_extended_0.46_Linux_64bit.deb
-    - sudo dpkg -i hugo*.deb
+    - bash travis-hugo.sh
     - pip install Pygments
 
 script:
     - mkdir public
-    - hugo
+    - mkdir content
+    - LD_LIBRARY_PATH=$(pwd)/tmp/usr/lib/x86_64-linux-gnu $(pwd)/tmp/usr/local/bin/hugo
 
 deploy:
     provider: pages
