@@ -1,4 +1,7 @@
 # website-generator
+[![Build Status](https://travis-ci.org/shityhiking/website-generator.svg?branch=master)](https://travis-ci.org/shityhiking/website-generator)
+  
+  
 Templating to simplify changes in [shityhiking.github.io](shityhiking.github.io)
 
 ### Inspiration
