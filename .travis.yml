@@ -1,0 +1,36 @@
+language: python
+
+install:
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+    - pip install Pygments
+
+script:
+    - mkdir public
+    - hugo
+
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    on:
+      branch: master
+    local-dir: ./public/
+    repo: shityhiking.github.io
+    target-branch: master
+    name: s8sg
+    email: swarvanusg@gmail.com
+    committer-from-gh: true
+
+
+      #after_success: |
+      #    if [ -n "$GITHUB_API_KEY" ]; then
+      #    git checkout --orphan master
+      #    git rm -rf .
+      #    mv public/* .
+      #    rm -rf public hugo_*
+      #    git add -f --ignore-errors --all
+      #    git -c user.name='s8sg' -c user.email='swarvsnusg@gmail.com' commit -m init
+      #    git push -f -q https://$GITHUB_USER:$GITHUB_API_KEY@github.com/ master
+      #    fi
